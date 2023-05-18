@@ -13,32 +13,37 @@ import Inventory from './components/Inventory/Inventory';
 import Login from './components/Login/Login';
 import cartProductsLoader from './loaders/cartProductsLoader';
 import Checkout from './components/Checkout/Checkout';
+import Signup from './components/Signup/Signup';
 
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <Home></Home>,
+    element: <Home />,
     children: [
       {
         path: '/',
-        element: <Shop></Shop>
+        element: <Shop />
       },
       {
         path: 'orders',
-        element: <Orders></Orders>,
+        element: <Orders />,
         loader: cartProductsLoader
       },
       {
         path: 'inventory',
-        element: <Inventory></Inventory>
+        element: <Inventory />
       },
       {
-        path:'checkout',
-        element: <Checkout></Checkout>
+        path: 'checkout',
+        element: <Checkout />
       },
       {
         path: 'login',
-        element: <Login></Login>
+        element: <Login />
+      },
+      {
+        path: 'signup',
+        element: <Signup />
       }
     ]
   }
