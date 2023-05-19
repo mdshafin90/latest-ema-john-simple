@@ -21,7 +21,7 @@ const Login = () => {
                 </form>
             </div>
             <p className='signup-new'>New To Ema-John ? <small><Link to="/signup">Create New Account</Link></small></p>
-            <hr />
+            <p className='or'>--------------------------- or -------------------------</p>
             <button className='google-login'><img className='google-logo' src={img} alt="" /> Continue With Google</button>
         </div>
     );
